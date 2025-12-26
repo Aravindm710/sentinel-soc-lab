@@ -1,0 +1,4 @@
+Event
+| where TimeGenerated > ago(30m)
+| sort by TimeGenerated desc
+| take 50
