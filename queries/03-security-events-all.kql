@@ -1,0 +1,5 @@
+Event
+| where EventLog == "Security"
+| where TimeGenerated > ago(24h)
+| summarize Count = count() by EventID
+| sort by Count desc
