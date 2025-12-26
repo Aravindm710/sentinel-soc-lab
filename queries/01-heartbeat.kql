@@ -1,0 +1,4 @@
+Heartbeat
+| where Computer contains "DESKTOP"
+| sort by TimeGenerated desc
+| take 50
